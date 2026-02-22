@@ -1,231 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-
-        <div class="sidebar">
-
-            <div id="sidebar-header">
-                <div class="dashboard-text">
-                    <img src="icons/dashboard.svg" class="main-icons">Dashboard
-                </div>
-            </div>
-
-            <ul class="dash-menu">
-                <li class="dash-item"><img class="icons" src="icons/home.svg"><span>Home</span></li>
-                <li class="dash-item"><img class="icons" src="icons/profile.svg">Profile</li>
-                <li class="dash-item"><img class="icons" src="icons/messages.svg">Messages</li>
-                <li class="dash-item"><img class="icons" src="icons/history.svg">History</li>
-                <li class="dash-item"><img class="icons" src="icons/tasks.svg">Tasks</li>
-                <li class="dash-item"><img class="icons" src="icons/communities.svg">Communities</li>
-            </ul>
-
-            <ul class="dash-menu">
-                <li class="dash-item"><img class="icons" src="icons/settings.svg">Settings</li>
-                <li class="dash-item"><img class="icons" src="icons/support.svg">Support</li>
-                <li class="dash-item"><img class="icons" src="icons/privacy.svg">Privacy</li>
-                <li><a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/43cc6ab69fdfbef40d431a65677d2144668930ac/intermediate_html_css/grid/project_admin_dashboard/imgs/dashboard-project.png"
-                        target="_blank" rel="noopener noreferrer">This website was created based on this Reference
-                        Image</a></li>
-            </ul>
-
+      <aside class="sidebar">
+        <div id="sidebar-header">
+          <div class="dashboard-text">
+            <img src="icons/dashboard.svg" class="main-icons" alt="" />
+            <span>Dashboard</span>
+          </div>
         </div>
 
+        <ul class="dash-menu">
+          <li class="dash-item">
+            <img class="icons" src="icons/home.svg" alt="" />
+            <span>Home</span>
+          </li>
+          <li class="dash-item">
+            <img class="icons" src="icons/profile.svg" alt="" />
+            <span>Profile</span>
+          </li>
+          <li class="dash-item">
+            <img class="icons" src="icons/messages.svg" alt="" />
+            <span>Messages</span>
+          </li>
+          <li class="dash-item">
+            <img class="icons" src="icons/history.svg" alt="" />
+            <span>History</span>
+          </li>
+          <li class="dash-item">
+            <img class="icons" src="icons/tasks.svg" alt="" />
+            <span>Tasks</span>
+          </li>
+          <li class="dash-item">
+            <img class="icons" src="icons/communities.svg" alt="" />
+            <span>Communities</span>
+          </li>
+        </ul>
 
-        <div class="nav">
-            <div class="search-bar">
-                <img src="icons/search-icon.svg" class="icons" id="search-icon">
-                <input type="text" placeholder="Search your Dashboard...">
+        <ul class="dash-menu">
+          <li class="dash-item">
+            <img class="icons" src="icons/settings.svg" alt="" />
+            <span>Settings</span>
+          </li>
+          <li class="dash-item">
+            <img class="icons" src="icons/support.svg" alt="" />
+            <span>Support</span>
+          </li>
+          <li class="dash-item">
+            <img class="icons" src="icons/privacy.svg" alt="" />
+            <span>Privacy</span>
+          </li>
 
-            </div>
+          <li class="dash-item">
+            <a
+              href="https://cdn.statically.io/gh/TheOdinProject/curriculum/43cc6ab69fdfbef40d431a65677d2144668930ac/intermediate_html_css/grid/project_admin_dashboard/imgs/dashboard-project.png"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reference image
+            </a>
+          </li>
+        </ul>
+      </aside>
 
-            <div class="right-links">
-                <img src="icons/notification.svg" class="icons" id="notification-icon">
-                <img src="icons/cat-profile-pic.jpg" alt="admin profile image" class="profile-img">
-                <div id="user-name">Charlie the Admin</div>
-            </div>
-
-            <div class="welcome-header">
-                <img src="icons/cat-profile-pic.jpg" alt="admin profile image" class="profile-img large">
-                <div class="welcome-text"><span>Hi there,<br></span>
-                    Charlie the Admin (@charlie)
-                </div>
-            </div>
-
-            <div class="right-buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
-
+      <header class="nav">
+        <div class="search-bar">
+          <img
+            src="icons/search-icon.svg"
+            class="icons"
+            id="search-icon"
+            alt=""
+          />
+          <input
+            type="text"
+            placeholder="Search your Dashboard..."
+            aria-label="Search dashboard"
+          />
         </div>
 
-        <div class="article">
-            <div class="project-menu">
-                <div class="subheading">Your Projects</div>
-
-                <div class="project-item">
-                    <div class="project-title">Super Cool Project</div>
-                    <div class="project-description">
-                        This project combined my talents with my natural abilities to create an incredible combination
-                        of
-                        talent and natural ability. It's really amazing. Check it out.
-                    </div>
-                    <div class="project-icons">
-                        <img src="icons/star-plus-outline.svg" class="icons">
-                        <img src="icons/eye-plus-outline.svg" class="icons">
-                        <img src="icons/source-fork.svg" class="icons">
-
-                    </div>
-                </div>
-
-
-                <div class="project-item">
-                    <div class="project-title">The Odin Project</div>
-                    <div class="project-description">
-                        Yes, that's right. I actually designed and invented the TOP. AKA The Odin Project. It's
-                        never been done before. I'm joking actually, I didn't make it. But I am grateful to them.
-                    </div>
-                    <div class="project-icons">
-                        <img src="icons/star-plus-outline.svg" class="icons">
-                        <img src="icons/eye-plus-outline.svg" class="icons">
-                        <img src="icons/source-fork.svg" class="icons">
-
-                    </div>
-                </div>
-
-
-                <div class="project-item">
-                    <div class="project-title">The Egg Project</div>
-                    <div class="project-description">
-                        This project combined my love of eggs with my love of programming to create an incredible
-                        and delicious combination. A bit like an egg salad sandwich, but better.
-                    </div>
-                    <div class="project-icons">
-                        <img src="icons/star-plus-outline.svg" class="icons">
-                        <img src="icons/eye-plus-outline.svg" class="icons">
-                        <img src="icons/source-fork.svg" class="icons">
-
-                    </div>
-                </div>
-
-
-                <div class="project-item">
-                    <div class="project-title">The I'm scared Project</div>
-                    <div class="project-description">
-                        DON'T BE SCARED! It's just a dream.
-                    </div>
-                    <div class="project-icons">
-                        <img src="icons/star-plus-outline.svg" class="icons">
-                        <img src="icons/eye-plus-outline.svg" class="icons">
-                        <img src="icons/source-fork.svg" class="icons">
-
-                    </div>
-                </div>
-
-
-                <div class="project-item">
-                    <div class="project-title">Another Japanese Learning App</div>
-                    <div class="project-description">
-                        This epic learning app is the last Japanese learning app you will ever need in your whole
-                        ever awesome life. So good luck and download it now!!!
-                    </div>
-                    <div class="project-icons">
-                        <img src="icons/star-plus-outline.svg" class="icons">
-                        <img src="icons/eye-plus-outline.svg" class="icons">
-                        <img src="icons/source-fork.svg" class="icons">
-
-                    </div>
-                </div>
-
-
-                <div class="project-item">
-                    <div class="project-title">NOT A Website</div>
-                    <div class="project-description">
-                        Can't you read? This isn't a website, nor a project. I am not even sure what this is. It
-                        could be just a guy writing some stupid stuff just to fill up the page.
-                    </div>
-                    <div class="project-icons">
-                        <img src="icons/star-plus-outline.svg" class="icons">
-                        <img src="icons/eye-plus-outline.svg" class="icons">
-                        <img src="icons/source-fork.svg" class="icons">
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="announcements">
-                <div class="subheading">Announcements</div>
-
-                <div class="anny-cards">
-                    <div class="anny-card">
-                        <div class="anny-card-heading">Site Maintenance</div>
-                        <div class="anny-card-text">The website will be down from 10pm, to 4am on January the 1st
-                            1999,
-                            due
-                            to...</div>
-                    </div>
-                    <div class="line-spacing"></div>
-                    <div class="anny-card">
-                        <div class="anny-card-heading">Community Share Day</div>
-                        <div class="anny-card-text">If you click this and share this email 10 times, the ghost of
-                            kitty
-                            won't visit you at night...</div>
-                    </div>
-                    <div class="line-spacing"></div>
-                    <div class="anny-card">
-                        <div class="anny-card-heading">Updated Privacy Policy</div>
-                        <div class="anny-card-text">We recently updated our privacy policy, but who really cares
-                            about
-                            that? If you did, you would not need to see this notice. But that's unlucky. Anyways,
-                            how
-                            are you? I'm...</div>
-                    </div>
-                </div>
-
-                <div class="trending">
-                    <div class="subheading">Trending</div>
-                    <div class="trending-cards">
-                        <div class="trending-card">
-                            <img src="icons/profile-img4.jpg" class="profile-img">
-                            <div class="trending-profile">@tegan <br><span>World Peace Builder</span></div>
-                        </div>
-                        <div class="trending-card">
-                            <img src="icons/profile-img.jpg" class="profile-img">
-                            <div class="trending-profile">@markus-jones <br><span>Bob the Builder</span></div>
-                        </div>
-                        <div class="trending-card">
-                            <img src="icons/profile-img2.jpg" class="profile-img">
-                            <div class="trending-profile">@sally <br><span>Actual Human Woman</span></div>
-                        </div>
-                        <div class="trending-card">
-                            <img src="icons/profile-img3.jpeg" class="profile-img">
-                            <div class="trending-profile">@teganagain <br><span>I'm bored</span></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="right-links">
+          <img
+            src="icons/notification.svg"
+            class="icons"
+            id="notification-icon"
+            alt="Notifications"
+          />
+          <img
+            src="icons/cat-profile-pic.jpg"
+            alt="Admin profile"
+            class="profile-img"
+          />
+          <div id="user-name">Charlie the Admin</div>
         </div>
 
+        <div class="welcome-header">
+          <img
+            src="icons/cat-profile-pic.jpg"
+            alt="Admin profile"
+            class="profile-img large"
+          />
+          <div class="welcome-text">
+            <span>Hi there,<br /></span>
+            Charlie the Admin (@charlie)
+          </div>
+        </div>
 
+        <div class="right-buttons">
+          <button type="button">New</button>
+          <button type="button">Upload</button>
+          <button type="button">Share</button>
+        </div>
+      </header>
 
+      <main class="article">
+        <section class="project-menu">
+          <div class="subheading">Your Projects</div>
+          <div class="project-item">
+            <div class="project-title">Client Portal Redesign</div>
+            <div class="project-description">
+              A dashboard layout concept focused on clear navigation, readable
+              hierarchy, and responsive spacing.
+            </div>
+            <div class="project-icons">
+              <img src="icons/star-plus-outline.svg" class="icons" alt="Star" />
+              <img src="icons/eye-plus-outline.svg" class="icons" alt="Watch" />
+              <img src="icons/source-fork.svg" class="icons" alt="Fork" />
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title">Task Manager</div>
+            <div class="project-description">
+              A simple project tracker mockup with status-oriented cards and
+              quick actions for common workflows.
+            </div>
+            <div class="project-icons">
+              <img src="icons/star-plus-outline.svg" class="icons" alt="Star" />
+              <img src="icons/eye-plus-outline.svg" class="icons" alt="Watch" />
+              <img src="icons/source-fork.svg" class="icons" alt="Fork" />
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title">Design System Notes</div>
+            <div class="project-description">
+              Component and layout experiments exploring spacing, color, and
+              reusable UI patterns.
+            </div>
+            <div class="project-icons">
+              <img src="icons/star-plus-outline.svg" class="icons" alt="Star" />
+              <img src="icons/eye-plus-outline.svg" class="icons" alt="Watch" />
+              <img src="icons/source-fork.svg" class="icons" alt="Fork" />
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title">Performance Review</div>
+            <div class="project-description">
+              A layout draft exploring information density, card grouping, and
+              scannable dashboards.
+            </div>
+            <div class="project-icons">
+              <img src="icons/star-plus-outline.svg" class="icons" alt="Star" />
+              <img src="icons/eye-plus-outline.svg" class="icons" alt="Watch" />
+              <img src="icons/source-fork.svg" class="icons" alt="Fork" />
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title">Language Study Planner</div>
+            <div class="project-description">
+              A dashboard concept for tracking study goals, streaks, and weekly
+              progress at a glance.
+            </div>
+            <div class="project-icons">
+              <img src="icons/star-plus-outline.svg" class="icons" alt="Star" />
+              <img src="icons/eye-plus-outline.svg" class="icons" alt="Watch" />
+              <img src="icons/source-fork.svg" class="icons" alt="Fork" />
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title">Prototype Sandbox</div>
+            <div class="project-description">
+              A space for experimenting with layout variations, grid structure,
+              and UI polish.
+            </div>
+            <div class="project-icons">
+              <img src="icons/star-plus-outline.svg" class="icons" alt="Star" />
+              <img src="icons/eye-plus-outline.svg" class="icons" alt="Watch" />
+              <img src="icons/source-fork.svg" class="icons" alt="Fork" />
+            </div>
+          </div>
+        </section>
+
+        <aside class="announcements">
+          <div class="anny-cards">
+            <div class="anny-card">
+              <div class="anny-card-heading">Scheduled Maintenance</div>
+              <div class="anny-card-text">
+                Planned maintenance is scheduled from 10:00 PM to 4:00 AM. Some
+                features may be temporarily unavailable.
+              </div>
+            </div>
+
+            <div class="line-spacing" aria-hidden="true"></div>
+            <div class="anny-card">
+              <div class="anny-card-heading">Community Showcase</div>
+              <div class="anny-card-text">
+                Share your latest work and see what others are building.
+                Submissions close on Friday.
+              </div>
+            </div>
+
+            <div class="line-spacing" aria-hidden="true"></div>
+            <div class="anny-card">
+              <div class="anny-card-heading">Privacy Policy Update</div>
+              <div class="anny-card-text">
+                We’ve updated our privacy policy to improve clarity around data
+                handling and account settings.
+              </div>
+            </div>
+          </div>
+
+          <div class="trending">
+            <div class="subheading">Trending</div>
+            <div class="trending-cards">
+              <div class="trending-card">
+                <img
+                  src="icons/profile-img4.jpg"
+                  class="profile-img"
+                  alt="Profile: tegan"
+                />
+                <div class="trending-profile">
+                  @tegan <br /><span>World Peace Builder</span>
+                </div>
+              </div>
+              <div class="trending-card">
+                <img
+                  src="icons/profile-img.jpg"
+                  class="profile-img"
+                  alt="Profile: markus-jones"
+                />
+                <div class="trending-profile">
+                  @markus-jones <br /><span>Manager</span>
+                </div>
+              </div>
+              <div class="trending-card">
+                <img
+                  src="icons/profile-img2.jpg"
+                  class="profile-img"
+                  alt="Profile: sally"
+                />
+                <div class="trending-profile">
+                  @sally <br /><span>Concept Artist</span>
+                </div>
+              </div>
+              <div class="trending-card">
+                <img
+                  src="icons/profile-img3.jpeg"
+                  class="profile-img"
+                  alt="Profile: teganagain"
+                />
+                <div class="trending-profile">
+                  @adrian <br /><span>Design Systems Engineer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
     </div>
 
-
-    <script src="javascript.js"></script>
-
-</body>
-
+    <script src="javascript.js" defer></script>
+  </body>
 </html>
